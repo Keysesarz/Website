@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kc Saraza - My Digital Journey">
+  <title>Kc Saraza | My Digital Journey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="topbar">
+      <span>Exploring</span>
+      <span>•</span>
+      <span>Learning</span>
+      <span>•</span>
+      <span>Creating</span>
+    </div>
+
+    <nav class="navbar">
+      <a href="#home" class="brand">
+        <img src="assets/logo.png" alt="Kc Saraza Logo" class="brand-logo">
+        <span>Kc Saraza</span>
+    </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <button class="nav-cta" data-scroll="#blog">Explore Blog</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-grid" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">MY DIGITAL JOURNEY</p>
+        <h1>Exploring ideas.<br><em>Learning by creating.</em></h1>
+        <p class="hero-text">
+          Welcome to my personal website where I share my experiences,
+          projects, lessons, and discoveries as I continue learning about technology.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-scroll="#blog">Read My Blog <span>→</span></button>
+          <button class="btn btn-light" data-scroll="#about">About Me</button>
+        </div>
+        <div class="mini-note">
+          <span class="dot"></span>
+          A student journey through technology, design, and creativity.
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-wrap">
+          <img src="assets/blog-wix.jpg" alt="Digital project preview">
+          <div class="floating-card">
+            <strong>Explore</strong>
+            <span>my digital journey</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-strip">
+      <div><strong>01</strong><span>Explore</span><small>Try new ideas</small></div>
+      <div><strong>02</strong><span>Learn</span><small>Grow through practice</small></div>
+      <div><strong>03</strong><span>Create</span><small>Turn ideas into projects</small></div>
+      <div><strong>04</strong><span>Reflect</span><small>Learn from experience</small></div>
+    </section>
+
+    <section class="about section-grid" id="about">
+      <div class="about-image card-frame">
+        <img src="assets/blog-campus.jpg" alt="Kc working on a digital project">
+        <span class="image-label">STUDENT • CREATOR</span>
+      </div>
+
+      <div class="about-copy">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Learning is a journey, not a finish line.</h2>
+        <p>
+          Hi, I’m Kc Saraza, a student who is always curious and willing to try
+          something new. I’m still learning and discovering more about technology,
+          especially digital tools, website building, and blogging.
+        </p>
+        <p>
+          I enjoy experimenting with different tools and seeing what I can create
+          with them. Sometimes things do not work the way I expect, but I see those
+          moments as part of learning. Every project gives me a chance to try,
+          make mistakes, improve, and learn something new.
+        </p>
+
+        <div class="interest-grid">
+          <div><span>✦</span><strong>Technology</strong><small>Exploring new tools</small></div>
+          <div><span>✦</span><strong>Web Design</strong><small>Creating simple websites</small></div>
+          <div><span>✦</span><strong>Learning</strong><small>Building new skills</small></div>
+          <div><span>✦</span><strong>Creativity</strong><small>Turning ideas into work</small></div>
+        </div>
+
+        <button class="text-button" data-modal="aboutModal">Read more about me →</button>
+      </div>
+    </section>
+
+    <section class="blog-section" id="blog">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">FROM MY JOURNAL</p>
+          <h2>My Blog</h2>
+        </div>
+        <p>Stories, experiences, and lessons from my digital journey.</p>
+      </div>
+
+      <div class="filter-row">
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="design">Design</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="learning">Learning</button>
+        </div>
+        <label class="search-box">
+          <span>⌕</span>
+          <input id="blogSearch" type="search" placeholder="Search posts...">
+        </label>
+      </div>
+
+      <div class="blog-grid" id="blogGrid">
+        <article class="blog-card" data-category="design" data-title="15 Bad Designs I Found Around Our Campus">
+          <div class="card-image">
+            <img src="assets/bad design.jpg" alt="Campus design blog">
+            <span class="tag">DESIGN</span>
+          </div>
+          <div class="card-body">
+            <small>HCI • Campus Activity</small>
+            <h3>15 Bad Designs I Found Around Our Campus</h3>
+            <p>What I noticed about facilities, signs, furniture, and spaces from a student's point of view.</p>
+            <button class="read-more" data-post="campus">Read article →</button>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="design" data-title="The Meaning Behind My Logo">
+          <div class="card-image">
+            <img src="assets/logo.png" alt="Personal logo project">
+            <span class="tag">DESIGN</span>
+          </div>
+          <div class="card-body">
+            <small>Personal Branding</small>
+            <h3>The Meaning Behind My Logo</h3>
+            <p>A look at the simple ideas and symbols I used to create my personal KS logo.</p>
+            <button class="read-more" data-post="logo">Read article →</button>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="web" data-title="My Experience Using Wix as a Blogging Platform">
+          <div class="card-image">
+            <img src="assets/wix.jpg" alt="Wix website project">
+            <span class="tag">WEB</span>
+          </div>
+          <div class="card-body">
+            <small>Web Development</small>
+            <h3>My Experience Using Wix as a Blogging Platform</h3>
+            <p>My experience exploring a website builder while learning the basics of creating a blog.</p>
+            <button class="read-more" data-post="wix">Read article →</button>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="learning" data-title="What I Learned From Building My First Website">
+          <div class="card-image abstract-image">
+             <img src="assets/Lern.jpg" >
+            <span class="tag">LEARNING</span>
+          </div>
+          <div class="card-body">
+            <small>Reflection</small>
+            <h3>What I Learned From Building My First Website</h3>
+            <p>Small mistakes, layout decisions, and lessons that helped me become more confident.</p>
+            <button class="read-more" data-post="learning">Read article →</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="empty-state" id="emptyState">No posts found. Try another search or category.</div>
+    </section>
+
+    <section class="project-section" id="projects">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">WHAT I CREATE</p>
+          <h2>Selected Projects</h2>
+        </div>
+        <p>School activities and personal experiments that helped me practice my skills.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-large">
+          <div class="project-number">01</div>
+          <div>
+            <span>WEB DESIGN</span>
+            <h3>Personal Digital Journey</h3>
+            <p>A responsive personal website using a modular grid, clear hierarchy, and consistent spacing.</p>
+            <button class="project-btn" data-modal="projectModal">View project →</button>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <div>
+            <span>HCI</span>
+            <h3>Campus Design Observation</h3>
+            <p>Observing how real spaces and objects affect everyday student experiences.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <div>
+            <span>WEB DEVELOPMENT</span>
+            <h3>Website Experiments</h3>
+            <p>Trying different builders, layouts, and interactions to understand what works.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div>
+        <p class="eyebrow">STAY CONNECTED</p>
+        <h2>Get updates from my digital journey.</h2>
+        <p>Occasional notes about projects, lessons, and new experiments.</p>
+      </div>
+      <form id="newsletterForm" class="newsletter-form">
+        <input id="emailInput" type="email" placeholder="Enter your email" required>
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <section class="contact section-grid" id="contact">
+      <div>
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Have an idea or want to say hello?</h2>
+        <p>
+          Send a message through the form. This demo form gives instant feedback
+          without needing a backend server.
+        </p>
+        <div class="contact-details">
+          <div><span>✉</span><span>Email<br><strong>kc.saraza@gmail.com</strong></span></div>
+          <div><span>⌁</span><span>Focus<br><strong>Technology & Web Design</strong></span></div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label>Name<input id="name" type="text" required></label>
+        <label>Email<input id="contactEmail" type="email" required></label>
+        <label>Message<textarea id="message" rows="5" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Send Message <span>→</span></button>
+        <p class="form-status" id="contactStatus"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div>
+        <a href="#home" class="brand footer-brand">
+          <span class="brand-mark">
+            <img src="assets/logo.png">
+          </span>
+          <span>Kc Saraza</span>
+        </a>
+        <p>Exploring • Learning • Creating</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Kc Saraza. Personal website.</span>
+      <button id="backTop">Back to top ↑</button>
+    </div>
+  </footer>
+
+  <!-- Article modal -->
+  <div class="modal" id="articleModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" data-close="articleModal">×</button>
+      <p class="eyebrow" id="modalEyebrow">BLOG</p>
+      <h2 id="modalTitle"></h2>
+      <p id="modalText"></p>
+      <div class="modal-actions">
+        <button class="btn btn-light" data-close="articleModal">Close</button>
+        <button class="btn btn-primary" id="modalScrollContact">Contact Me →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- About modal -->
+  <div class="modal" id="aboutModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" data-close="aboutModal">×</button>
+      <p class="eyebrow">ABOUT ME</p>
+      <h2>A student who enjoys learning by doing.</h2>
+      <p>
+        I created this website as a place to document my digital journey.
+        My goal is not to make everything perfect on the first try, but to keep
+        experimenting, learning from mistakes, and improving each project.
+      </p>
+      <button class="btn btn-primary" data-close="aboutModal">Got it</button>
+    </div>
+  </div>
+
+  <!-- Project modal -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" data-close="projectModal">×</button>
+      <p class="eyebrow">PROJECT DETAILS</p>
+      <h2>Personal Digital Journey Website</h2>
+      <p>
+        This website applies a modular grid structure to organize content,
+        establish hierarchy, align sections, and keep the visual style consistent
+        across screen sizes.
+      </p>
+      <button class="btn btn-primary" data-close="projectModal">Close</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
